@@ -77,7 +77,6 @@ class ChatViewController: UIViewController {
         }
         
     }
-}
 
 
 extension ChatViewController: UITableViewDataSource {
