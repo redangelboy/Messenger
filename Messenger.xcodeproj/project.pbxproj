@@ -44,7 +44,6 @@
 		02410C9F293EFFE800B13440 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02410C9E293EFFE800B13440 /* Model.swift */; };
 		02410CA4293F01B900B13440 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02410CA2293F01B900B13440 /* MessageCell.swift */; };
 		02410CA5293F01B900B13440 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02410CA3293F01B900B13440 /* MessageCell.xib */; };
-		02A53129294266B100C40347 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A53128294266B100C40347 /* ChatVC.swift */; };
 		02D51C4C2942D0F000FF6493 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02D51C4B2942D0F000FF6493 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +60,6 @@
 		02410C9E293EFFE800B13440 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		02410CA2293F01B900B13440 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		02410CA3293F01B900B13440 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
-		02A53128294266B100C40347 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		02D51C4B2942D0F000FF6493 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -149,7 +147,6 @@
 			children = (
 				02071DB729399A65008C3CD5 /* LoginViewController.swift */,
 				02410C9C293EFC6F00B13440 /* ChatViewController.swift */,
-				02A53128294266B100C40347 /* ChatVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -285,7 +282,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				02071DB829399A65008C3CD5 /* LoginViewController.swift in Sources */,
-				02A53129294266B100C40347 /* ChatVC.swift in Sources */,
 				02410CA4293F01B900B13440 /* MessageCell.swift in Sources */,
 				02410C9F293EFFE800B13440 /* Model.swift in Sources */,
 				02071D46293939CC008C3CD5 /* AppDelegate.swift in Sources */,
