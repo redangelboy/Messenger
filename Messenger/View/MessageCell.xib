@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="216" id="IZv-uU-TN4" customClass="MessageCell" customModule="Messenger" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="216"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IZv-uU-TN4" id="qqa-0c-eV8">
+                <rect key="frame" x="0.0" y="0.0" width="440" height="216"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="flX-Jc-7nk">
+                        <rect key="frame" x="10" y="10" width="420" height="196"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="contactLabel" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGP-jx-MIw">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="31.333333333333332"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="bPq-1c-6Ru"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                                <color key="textColor" red="0.4024090575" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AUL-aI-ZsH">
+                                <rect key="frame" x="80" y="0.0" width="270" height="89"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label s sfd fsd fsf sdf sdf sdf sdf sdf sdf sd fsdf sdfs dfsdf sdf sdf sd sd fsdf sdfs fs s dfsd sdf" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSL-F4-iSe">
+                                        <rect key="frame" x="10" y="10" width="250" height="69"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="BrandLightPurple"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="BrandPurple"/>
+                                <constraints>
+                                    <constraint firstItem="fSL-F4-iSe" firstAttribute="top" secondItem="AUL-aI-ZsH" secondAttribute="top" constant="10" id="5om-2D-qr3"/>
+                                    <constraint firstItem="fSL-F4-iSe" firstAttribute="leading" secondItem="AUL-aI-ZsH" secondAttribute="leading" constant="10" id="9vZ-Eb-vfE"/>
+                                    <constraint firstAttribute="bottom" secondItem="fSL-F4-iSe" secondAttribute="bottom" constant="10" id="Sqk-xz-7PB"/>
+                                    <constraint firstAttribute="trailing" secondItem="fSL-F4-iSe" secondAttribute="trailing" constant="10" id="aR0-0n-pzK"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyLabel" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFu-sy-NDd">
+                                <rect key="frame" x="370" y="0.0" width="50" height="31.333333333333332"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="w5m-xc-LrX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.14117647059999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="AUL-aI-ZsH" secondAttribute="bottom" constant="107" id="hIP-dd-VVV"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="flX-Jc-7nk" firstAttribute="top" secondItem="qqa-0c-eV8" secondAttribute="top" constant="10" id="S5W-WC-vvM"/>
+                    <constraint firstItem="flX-Jc-7nk" firstAttribute="leading" secondItem="qqa-0c-eV8" secondAttribute="leading" constant="10" id="Xk1-yN-rGd"/>
+                    <constraint firstAttribute="bottom" secondItem="flX-Jc-7nk" secondAttribute="bottom" constant="10" id="XtE-o5-BrA"/>
+                    <constraint firstAttribute="trailing" secondItem="flX-Jc-7nk" secondAttribute="trailing" constant="10" id="xC4-oG-JP7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="JIy-Yf-Rze"/>
+            <connections>
+                <outlet property="contactLabel" destination="fGP-jx-MIw" id="X43-Lg-xxg"/>
+                <outlet property="label" destination="fSL-F4-iSe" id="aS8-gm-gVt"/>
+                <outlet property="messageBubble" destination="AUL-aI-ZsH" id="GBG-9X-lFr"/>
+                <outlet property="myLabel" destination="sFu-sy-NDd" id="euQ-od-oSD"/>
+            </connections>
+            <point key="canvasLocation" x="184.61538461538461" y="47.630331753554501"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="BrandLightPurple">
+            <color red="0.98000001907348633" green="0.9649999737739563" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BrandPurple">
+            <color red="0.67500001192092896" green="0.43500000238418579" blue="0.9179999828338623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
