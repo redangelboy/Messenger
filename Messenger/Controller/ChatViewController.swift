@@ -15,7 +15,7 @@ class ChatViewController: UIViewController {
         setupKeyboardHidding()
         tableView.dataSource = self
         title = "Chateamos"
-//        navigationItem.hidesBackButton = true
+        //        navigationItem.hidesBackButton = true
         tableView.register(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
         
         self.fetchfirebaseMessages()
@@ -35,7 +35,7 @@ class ChatViewController: UIViewController {
             for i in 1..<5{
                 newvar[i] = String(info[i]).split(omittingEmptySubsequences: false, whereSeparator: { $0 == "=" })
             }
-                        
+            
             guard let uid =   newvar[1] else  {return [:]}
             guard let body =  newvar[2] else {return [:]}
             guard let time =  newvar[3] else {return [:]}
@@ -73,10 +73,10 @@ class ChatViewController: UIViewController {
         
         
         ref.child(Date().description).setValue(["UID" : " C ", "body": body, "timestamp": "\(Date())", "username" : "Cesar"])
-            self.messageTextfield.text = ""
-        }
-        
+        self.messageTextfield.text = ""
     }
+    
+}
 
 
 extension ChatViewController: UITableViewDataSource {
@@ -101,7 +101,7 @@ extension ChatViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         let forPrint = self.messages1[indexPath.row]
-
+        
         print("************")
         print(forPrint["username"] as Any)
         print(forPrint["body"] as Any)
